@@ -7,7 +7,6 @@ venv/
 .pytest_cache/
 results/checkpoints/*
 results/logs/*
-results/graphs/*
 !results/checkpoints/.gitkeep
 !results/logs/.gitkeep
 
