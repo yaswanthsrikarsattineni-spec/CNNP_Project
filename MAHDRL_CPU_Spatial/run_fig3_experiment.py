@@ -50,7 +50,7 @@ def main():
         print(f"Training CC-MAHDRL (M=1 degenerate) ({args.episodes} episodes)")
         print("=" * 70)
         from training.train_cc_mahdrl import train_cc_mahdrl
-        train_cc_mahdrl(args.episodes, output_tag="cc_mahdrl", seed=1)
+        train_cc_mahdrl(args.episodes, output_tag="cc_mahdrl", seed=args.seed)
         print()
 
     plot_figure3()

@@ -40,7 +40,7 @@ class SimulationConfig:
     path_loss_exponent: float = 2.0
     qoe_latency_penalty: float = 1e6
     random_seed: int = 7
-    device: str = "cuda"
+    device: str = "cpu"
 
     # Observation layout: channel_re and channel_im are stored in obs at
     # positions [4K+J : 4K+J+K·N_ant] and [4K+J+K·N_ant : 4K+J+2K·N_ant],

@@ -1,12 +1,23 @@
+cat >> .gitignore <<'EOF'
+
+# Python virtual environments
+.venv/
+.venv-cpu/
+venv/
+venv-cpu/
+venv-cpu.backup.*/
+**/.venv*/
+**/venv*/
+
+# Python caches
 __pycache__/
 *.py[cod]
-.venv/
-venv/
-.env
-.vscode/
 .pytest_cache/
-results/checkpoints/*
-results/logs/*
-!results/checkpoints/.gitkeep
-!results/logs/.gitkeep
 
+# Training outputs
+*.pt
+*.pth
+*.ckpt
+results/checkpoints/*
+!results/checkpoints/.gitkeep
+EOF
