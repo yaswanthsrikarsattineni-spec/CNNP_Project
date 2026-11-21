@@ -10,3 +10,6 @@ results/logs/*
 !results/checkpoints/.gitkeep
 !results/logs/.gitkeep
 
+
+# Track experiment CSVs in this model
+!/results/logs/*.csv
