@@ -21,3 +21,5 @@ __pycache__/
 results/checkpoints/*
 !results/checkpoints/.gitkeep
 EOF
+# Include experiment CSVs in version control
+!/results/**/*.csv
