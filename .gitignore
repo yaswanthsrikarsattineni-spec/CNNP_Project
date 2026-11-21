@@ -1,6 +1,6 @@
 cat >> .gitignore <<'EOF'
 
-# Python virtual environments
+# Virtual environments
 .venv/
 .venv-cpu/
 venv/
@@ -9,17 +9,14 @@ venv-cpu.backup.*/
 **/.venv*/
 **/venv*/
 
-# Python caches
+# Python cache
 __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Training outputs
+# Training checkpoints
 *.pt
 *.pth
 *.ckpt
-results/checkpoints/*
-!results/checkpoints/.gitkeep
-EOF
-# Include experiment CSVs in version control
-!/results/**/*.csv
+EOFgit add .
+git status
